@@ -453,6 +453,23 @@
 
                 <section title="required">
                     <t>
+                        The value of this keyword MUST be an array.
+                        Elements of this array, if any, MUST be strings, and MUST be unique.
+                    </t>
+                    <t>
+                        An object instance is valid against this keyword if every item in the array is
+                        the name of a property in the instance.
+                    </t>
+                    <t>
+                        Omitting this keyword has the same behavior as an empty array.
+                        <cref>
+                            This keyword should be deprecated.
+                        </cref>
+                    </t>
+                </section>
+
+                <section title="requiredProperties">
+                    <t>
                         The value of this keyword MUST be either a boolean or an array.
                         If it is an array, elements of this array, if any, MUST be strings,
                         and MUST be unique.
